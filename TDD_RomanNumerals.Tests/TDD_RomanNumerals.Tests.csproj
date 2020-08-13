@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>TDD_RomanNumerals.Core</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
