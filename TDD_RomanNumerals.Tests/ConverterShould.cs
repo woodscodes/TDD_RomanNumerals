@@ -14,19 +14,47 @@ namespace TDD_RomanNumerals.Tests
         }
 
         [Fact]
-        public void Convert1intoI()
+        public void Convert1IntoI()
         {
-            var result = _sutConverter.Convert(1);
-
-            Assert.Equal("I", result);
+            Assert.Equal("I", _sutConverter.Convert(1));
         }
 
         [Fact]
-        public void Convert3intoIII()
+        public void Convert3IntoIII()
         {
-            var result = _sutConverter.Convert(3);
+            Assert.Equal("III", _sutConverter.Convert(3));
+        }
+        
+        [Fact]
+        public void Convert10IntoX()
+        {
+            Assert.Equal("X", _sutConverter.Convert(10));
+        }
 
-            Assert.Equal("III", result);
-        }   
+        [Fact]
+        public void Convert24IntoXXIV()
+        {
+            Assert.Equal("XXIV", _sutConverter.Convert(24));
+        }
+
+        [Fact]
+        public void Convert450IntoCDL()
+        {
+            Assert.Equal("CDL", _sutConverter.Convert(450));
+        }
+
+        [Fact]
+        public void Convert369IntoCCCLXIX()
+        {
+            Assert.Equal("CCCLXIX", _sutConverter.Convert(369));
+        }
+
+        [Fact]
+        public void Convert1984IntoMCMLXXXIV()
+        {
+            Assert.Equal("MCMLXXXIV", _sutConverter.Convert(1984));
+        }
+
+
     }
 }
